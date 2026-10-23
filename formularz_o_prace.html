@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formularz rekrutacyjny</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 16px;
+      color: #222;
+    }
+
+    form {
+      display: grid;
+      gap: 14px;
+    }
+
+    label {
+      display: grid;
+      gap: 6px;
+    }
+
+    input, select, textarea, button {
+      font: inherit;
+      padding: 10px;
+    }
+
+    button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formularz rekrutacyjny</h1>
+
+  <section>
+    <h2>O naszej firmie</h2>
+    <p>
+      Świadczymy usługi informatyczne dla firm, w tym tworzymy oprogramowanie,
+      zapewniamy pomoc techniczną i konfigurujemy sieci komputerowe. Szukamy
+      osób, które lubią rozwiązywać problemy i pomagać klientom.
+    </p>
+  </section>
+
+  <form action="#" method="post">
+    <label>
+      Imię i nazwisko
+      <input type="text" name="name" required>
+    </label>
+
+    <label>
+      Adres e-mail
+      <input type="email" name="email" required>
+    </label>
+
+    <label>
+      Numer telefonu
+      <input type="tel" name="phone">
+    </label>
+
+    <label>
+      Stanowisko, na które aplikujesz
+      <input type="text" name="position" required>
+    </label>
+
+    <label>
+      Dotychczasowe doświadczenie
+      <textarea name="experience" rows="4"
+        placeholder="Opisz swoje poprzednie stanowiska, umiejętności lub projekty."></textarea>
+    </label>
+
+    <label>
+      CV
+      <input type="file" name="resume" accept=".pdf,.doc,.docx">
+    </label>
+
+    <label>
+      List motywacyjny
+      <textarea name="cover-letter" rows="5"></textarea>
+    </label>
+
+    <button type="submit">Wyślij zgłoszenie</button>
+  </form>
+</body>
+</html>
+    <label>
+      Resume
+      <input type="file" name="resume" accept=".pdf,.doc,.docx">
+    </label>
+
+    <label>
+      Cover letter
+      <textarea name="cover-letter" rows="5"></textarea>
+    </label>
+
+    <button type="submit">Submit application</button>
+  </form>
+</body>
+</html>
